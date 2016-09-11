@@ -6,7 +6,6 @@ replace
 `str=[str str0(pos0(i)+1:pos(i)-1) sprintf('_0x%X_',str0(pos(i)))];`
 by
 `str=[str str0(pos0(i)+1:pos(i)-1) sprintf('_0x%X_',toascii(str0(pos(i))))];`
-
 and replace
 `str=sprintf('x0x%X_%s',char(str(1)),str(2:end));`
 by
